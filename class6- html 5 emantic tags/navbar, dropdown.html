@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    nav{
+        height: 50px;
+        background-color: lightslategray;
+        line-height: 30px;
+        font-size: 25px;
+    }
+    nav li{
+        list-style: none;
+        padding:10px;
+    }
+    nav li:hover{
+        background-color: darkgray;
+    }
+    
+    nav > ul > li{
+        float: left;
+
+    }
+
+    nav li:hover{
+        background-color: darkgray
+    }
+    nav a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .dropdown{
+        display: none;
+        position: absolute;
+        background-color: lightslategray;
+        padding: 0;
+    }
+   
+
+    nav > ul > li:hover > ul{
+        display: block;
+        position: absolute;
+    }
+    
+</style>
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="portfolio.html">portfolio</a></li>
+            <li><a href="table.html">About us</a></li>
+            <li><a href="nav.html">Nav</a>
+                <ul class="dropdown">
+                    <li><a href="nav.html">Option 1</a></li>
+                    <li><a href="nav.html">Option 2</a></li>
+                    <li><a href="nav.html">Option 3</a></li>
+                    <li><a href="nav.html">Option 4</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+
+
+
+
+    <h1>Checking out my first nav bar</h1>
+    <p>I am very excited</p>
+</body>
+</html>
